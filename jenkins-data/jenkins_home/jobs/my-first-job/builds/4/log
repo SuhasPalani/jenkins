@@ -1,0 +1,10 @@
+Started by user [8mha:////4DgvnX96Mlp1CnFJ/SluKoKJ5vYrqQzFq0+87R9T41LVAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZB/dLi1CL9xJTczLz44tKMxGIAM7kLvsYAAAA=[0mSuhas Palani
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/my-first-job
+[my-first-job] $ /bin/sh -xe /tmp/jenkins14226843203404519626.sh
++ Name=Suhas
++ date
++ /$ echo Hello, Suhas. Current data and time is Tue Jan  2 23:06:57 UTC 2024
+/tmp/jenkins14226843203404519626.sh: 3: /$: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
