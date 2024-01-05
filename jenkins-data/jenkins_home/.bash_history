@@ -125,3 +125,39 @@ ls
 pwd
 exit
 exit
+ssh web
+ssh web
+clear
+cd ansible
+cd ~/ansible
+ls
+cat hosts
+ansible -m ping -i hosts web1
+ansible -m ping -i hosts test1
+ansible -m ping -i hosts all
+clear
+xit
+exit
+cd ~/ansible
+
+clear
+ansible-playbook -i hosts people.yml
+exit
+ansible-playbook -i hosts people.yml
+ll -l
+cd ~/ansible
+ll-l
+ll -l
+clear
+ls
+ansible-playbook -i hosts people.yml
+exit
+cd ~/ansible
+ansible-playbook -i hosts people.yml
+
+ansible-playbook -i hosts people.yml -e "PEOPLE_AGE=25"
+pwd
+ansible-playbook -i hosts people.yml 
+ansible-playbook -i hosts people.yml -e "PEOPLE_AGE=25"
+clear
+exit
