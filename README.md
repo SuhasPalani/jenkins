@@ -1,6 +1,6 @@
 # Udemy Course: Become a DevOps Master with Jenkins
 
-## What I LEARNED
+## What I Learned
 
 - Understand Jenkins in-depth
 - Master Continuous Integration and Continuous Deployment (CI/CD)
