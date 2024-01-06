@@ -18,10 +18,17 @@ echo &quot;Build ID for this is $BUILD_ID&quot;
 echo &quot;Build URL for this is $BUILD_URL&quot;
 echo &quot;***********&quot;
 echo &quot;$NAME_OF_THE_COURSE&quot;
-echo &quot;$COUNTRY&quot;</command>
+echo &quot;$COUNTRY&quot;
+</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
-  <publishers/>
+  <publishers>
+    <hudson.tasks.Mailer plugin="mailer@463.vedf8358e006b_">
+      <recipients>sugipals007@gmail.com</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>true</sendToIndividuals>
+    </hudson.tasks.Mailer>
+  </publishers>
   <buildWrappers/>
 </project>

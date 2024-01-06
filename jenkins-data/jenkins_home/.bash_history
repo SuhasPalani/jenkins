@@ -161,3 +161,52 @@ ansible-playbook -i hosts people.yml
 ansible-playbook -i hosts people.yml -e "PEOPLE_AGE=25"
 clear
 exit
+ll
+cd /var/jenkins_home/workspace
+ls -l
+cd maven-job
+ll
+ls -l
+ls -la
+clear
+cd /var/jenkins_home/workspace/maven-job/target/
+ls
+cd /var/jenkins_home/workspace/maven-job/target/my-app-1.0-SNAPSHOT.jar
+cd /var/jenkins_home/workspace/maven-job/target/
+ls
+pwd
+ls /var/jenkins_home/workspace/maven-job/target/ my-app-1.0-SNAPSHOT.jar
+ls /var/jenkins_home/workspace/maven-job/target/my-app-1.0-SNAPSHOT.jar
+java -jar /var/jenkins_home/workspace/maven-job/target/my-app-1.0-SNAPSHOT.jar
+clear
+ls
+ls
+çlear
+clear
+ls
+ll
+ls-l
+ls -l
+ls /var/jenkins_home/workspace/maven-job/target/my-app-1.0-SNAPSHOT.jar
+exit
+ls
+cd /var/jenkins_home
+ls
+cd workspace
+ls
+cd maven-job
+ls
+cd target
+ls
+cd surefire-reports
+clear
+ls
+ls /target/surefire-reports/*.xml
+ls
+ls target/surefire-reports/*.xml
+ls
+ls target/surefire-reports/*.xml
+ls /var/jenkins_home/workspace/maven-job/target/my-app-1.0-SNAPSHOT.jar
+cd ../..
+ls target/*.jar
+exit
