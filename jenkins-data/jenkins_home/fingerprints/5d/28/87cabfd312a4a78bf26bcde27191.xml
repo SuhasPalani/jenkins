@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2024-01-06 02:38:26.887 UTC</timestamp>
+  <md5sum>5d2887cabfd312a4a78bf26bcde27191</md5sum>
+  <fileName>Credential id=AWS_SCRET_KEY name=AWS_SCRET_KEY</fileName>
+  <usages>
+    <entry>
+      <string>backup-to-aws</string>
+      <ranges>1</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

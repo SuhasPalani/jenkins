@@ -57,6 +57,16 @@
         </permissions>
         <assignedSIDs/>
       </role>
+      <role name="trigger-jobs" pattern=".*">
+        <permissions>
+          <permission>hudson.model.Hudson.Read</permission>
+          <permission>hudson.model.Item.Read</permission>
+          <permission>hudson.model.Item.Build</permission>
+        </permissions>
+        <assignedSIDs>
+          <sid type="USER">Jenkins</sid>
+        </assignedSIDs>
+      </role>
     </roleMap>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
@@ -86,8 +96,13 @@
   <primaryView>all</primaryView>
   <slaveAgentPort>50000</slaveAgentPort>
   <label></label>
-  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
-    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
+  <crumbIssuer class="org.jenkinsci.plugins.strictcrumbissuer.StrictCrumbIssuer" plugin="strict-crumb-issuer@2.1.1">
+    <checkClientIP>false</checkClientIP>
+    <checkSameSource>false</checkSameSource>
+    <checkOnlyLocalPath>false</checkOnlyLocalPath>
+    <checkSessionMatch>false</checkSessionMatch>
+    <xorMasking>true</xorMasking>
+    <hoursValid>2</hoursValid>
   </crumbIssuer>
   <nodeProperties/>
   <globalNodeProperties>
