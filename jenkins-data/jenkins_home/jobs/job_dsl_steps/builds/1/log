@@ -1,0 +1,26 @@
+Started by user [8mha:////4DgvnX96Mlp1CnFJ/SluKoKJ5vYrqQzFq0+87R9T41LVAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZB/dLi1CL9xJTczLz44tKMxGIAM7kLvsYAAAA=[0mSuhas Palani
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/job_dsl_steps
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/jenkins-docs/simple-java-maven-app
+ > git init /var/jenkins_home/workspace/job_dsl_steps # timeout=10
+Fetching upstream changes from https://github.com/jenkins-docs/simple-java-maven-app
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git fetch --tags --force --progress -- https://github.com/jenkins-docs/simple-java-maven-app +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/jenkins-docs/simple-java-maven-app # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision b72f505a6659ca4741a14d5eac9c2eb668578345 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b72f505a6659ca4741a14d5eac9c2eb668578345 # timeout=10
+Commit message: "Bump org.apache.maven.plugins:maven-compiler-plugin (#779)"
+First time build. Skipping changelog.
+ > git tag -a -f -m Jenkins Build #1 jenkins-job_dsl_steps-1 # timeout=10
+[job_dsl_steps] $ /bin/sh -xe /tmp/jenkins6895667895333173850.sh
++ echo Hello World
+Hello World
+Finished: SUCCESS

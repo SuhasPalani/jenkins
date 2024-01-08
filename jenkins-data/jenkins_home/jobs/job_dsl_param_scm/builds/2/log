@@ -1,0 +1,20 @@
+Started by user [8mha:////4DgvnX96Mlp1CnFJ/SluKoKJ5vYrqQzFq0+87R9T41LVAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZB/dLi1CL9xJTczLz44tKMxGIAM7kLvsYAAAA=[0mSuhas Palani
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/job_dsl_param_scm
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/job_dsl_param_scm/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jenkins-docs/simple-java-maven-app # timeout=10
+Fetching upstream changes from https://github.com/jenkins-docs/simple-java-maven-app
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git fetch --tags --force --progress -- https://github.com/jenkins-docs/simple-java-maven-app +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision b72f505a6659ca4741a14d5eac9c2eb668578345 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b72f505a6659ca4741a14d5eac9c2eb668578345 # timeout=10
+Commit message: "Bump org.apache.maven.plugins:maven-compiler-plugin (#779)"
+ > git rev-list --no-walk b72f505a6659ca4741a14d5eac9c2eb668578345 # timeout=10
+ > git tag -a -f -m Jenkins Build #2 jenkins-job_dsl_param_scm-2 # timeout=10
+Finished: SUCCESS

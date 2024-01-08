@@ -1,0 +1,9 @@
+Started by user [8mha:////4DgvnX96Mlp1CnFJ/SluKoKJ5vYrqQzFq0+87R9T41LVAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZB/dLi1CL9xJTczLz44tKMxGIAM7kLvsYAAAA=[0mSuhas Palani
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/job-dsl
+Processing provided DSL script
+Added items:
+    GeneratedJob{name='job_dsl_example'}
+Unreferenced items:
+    GeneratedJob{name='job_dsl_created'}
+Finished: SUCCESS
