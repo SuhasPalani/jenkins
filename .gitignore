@@ -4,3 +4,6 @@
 .bashrc
 .gitconfig
 .docker
+jenkins-data/db_data/#innodb_redo/
+
+

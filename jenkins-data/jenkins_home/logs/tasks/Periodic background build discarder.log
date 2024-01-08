@@ -1,4 +1,4 @@
-Started at Sat Jan 06 06:07:18 UTC 2024
+Started at Mon Jan 08 16:17:56 UTC 2024
 Processing ansible-test
 Offering ansible-test to Project Build Discarder
 Processing ansible-users-db
@@ -7,8 +7,10 @@ Processing backup-to-aws
 Offering backup-to-aws to Project Build Discarder
 Processing ENV
 Offering ENV to Project Build Discarder
+Processing job-dsl
+Offering job-dsl to Project Build Discarder
 Processing maven-job
 Offering maven-job to Project Build Discarder
 Processing my-first-job
 Offering my-first-job to Project Build Discarder
-Finished at Sat Jan 06 06:07:18 UTC 2024. 8ms
+Finished at Mon Jan 08 16:17:56 UTC 2024. 5ms
