@@ -210,3 +210,14 @@ ls /var/jenkins_home/workspace/maven-job/target/my-app-1.0-SNAPSHOT.jar
 cd ../..
 ls target/*.jar
 exit
+cd ~
+ls
+grep home
+exit
+cd ~/jenkins_home
+clear
+cd ~
+ls -l
+cd jenkins_home
+clear
+exit

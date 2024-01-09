@@ -1,8 +1,15 @@
-Started at Sat Jan 06 06:28:21 UTC 2024
+Started at Mon Jan 08 19:45:35 UTC 2024
 Checking ansible-test
 Checking ansible-users-db
 Checking backup-to-aws
 Checking ENV
+Checking job-dsl
+Checking job_dsl_created
+Checking job_dsl_example
+Checking job_dsl_param
+Checking job_dsl_param_scm
+Checking job_dsl_steps
+Checking job_dsl_triggers
 Checking maven-job
 Checking my-first-job
-Finished at Sat Jan 06 06:28:21 UTC 2024. 3ms
+Finished at Mon Jan 08 19:45:35 UTC 2024. 12ms

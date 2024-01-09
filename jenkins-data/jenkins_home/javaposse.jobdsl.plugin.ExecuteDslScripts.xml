@@ -9,10 +9,10 @@
   </templateJobMap>
   <generatedJobMap class="concurrent-hash-map">
     <entry>
-      <string>job_dsl_steps</string>
+      <string>maven_dsl</string>
       <javaposse.jobdsl.plugin.SeedReference>
         <seedJobName>job-dsl</seedJobName>
-        <digest>5bd697d9b3a75daa3ca3ef24cd2fcd9e</digest>
+        <digest>6caea551d1ccc7ce38c15e19e2dc135d</digest>
       </javaposse.jobdsl.plugin.SeedReference>
     </entry>
   </generatedJobMap>

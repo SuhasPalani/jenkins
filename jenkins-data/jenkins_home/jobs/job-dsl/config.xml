@@ -13,27 +13,33 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <javaposse.jobdsl.plugin.ExecuteDslScripts plugin="job-dsl@1.87">
-      <scriptText>job(&apos;job_dsl_steps&apos;) {
+      <scriptText>job(&apos;maven_dsl&apos;) {
 
-    description(&apos;This is my awesome Job&apos;)
-
-
-    parameters {
-        stringParam(&apos;Planet&apos;, defaultValue = &apos;world&apos;, description = &apos;This is the world&apos;)
-        booleanParam(&apos;FLAG&apos;, true)
-        choiceParam(&apos;OPTION&apos;, [&apos;option 1 (default)&apos;, &apos;option 2&apos;, &apos;option 3&apos;])
-    }
+    description(&apos;Maven dsl project&apos;)
 
     scm {
-        git(&apos;https://github.com/jenkins-docs/simple-java-maven-app&apos;, &apos;master&apos;)
-    }
-
-    triggers {
-        cron(&apos;H 5 * * 7&apos;)
+        git(&apos;https://github.com/jenkins-docs/simple-java-maven-app&apos;, &apos;master&apos;, {node -&gt; node / &apos;extensions&apos; &lt;&lt; &apos;&apos; })
     }
 
     steps {
-        shell(&quot;echo &apos;Hello World&apos;&quot;)
+        maven {
+            mavenInstallation(&apos;jenkins-maven&apos;)
+            goals(&apos;-B -DskipTests clean package&apos;)
+        }
+        maven {
+            mavenInstallation(&apos;jenkins-maven&apos;)
+            goals(&apos;test&apos;)
+        }
+        shell(&apos;&apos;&apos;
+            echo ************RUNNING THE JAR************************
+            java -jar /var/jenkins_home/workspace/maven_dsl/target/my-app-1.0-SNAPSHOT.jar
+        &apos;&apos;&apos;)
+    }
+
+    publishers {
+        archiveArtifacts(&apos;target/*.jar&apos;)
+        archiveJunit(&apos;target/surefire-reports/*.xml&apos;)
+        mailer(&apos;ricardo.andre.gonzalez07@gmail.com&apos;, true, true)
     }
 }</scriptText>
       <usingScriptText>true</usingScriptText>
