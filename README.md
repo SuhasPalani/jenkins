@@ -40,9 +40,6 @@ Implement email notifications and integrations within Jenkins.
 ### Jenkins & Maven
 Integrate Jenkins with Maven for effective project management and build automation.
 
-### Jenkins & GIT
-Explore seamless integration between Jenkins and GIT for version control.
-
 ### Jenkins & DSL
 Dive into Jenkins and Domain Specific Language (DSL) for advanced scripting and automation.
 
