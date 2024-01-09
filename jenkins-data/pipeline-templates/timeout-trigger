@@ -1,0 +1,66 @@
+
+peline {
+    agent any
+    stages {
+        stage('Deploy') {
+            steps {
+                script {
+                    retry(3) {
+                        try {
+                            sh 'echo hello'
+                        } catch (Exception e) {
+                            // Handle the failure if needed
+                            echo "Failed to execute the command: ${e.message}"
+                            currentBuild.result = 'FAILURE'
+                        }
+                    }
+
+                    def timeoutResult = timeout(time: 5, unit: 'SECONDS') {
+                        try {
+                            sh 'sleep 5'
+                        } catch (Exception e) {
+                            // Handle the timeout if needed
+                            echo "Timeout occurred: ${e.message}"
+                            currentBuild.result = 'FAILURE'
+                        }
+                    }
+
+                    if (timeoutResult == 'TIMEOUT') {
+                        echo "Build marked as UNSTABLE due to timeout"
+                        currentBuild.result = 'UNSTABLE'
+                    }
+                }
+            }
+        }
+    }
+}
+pipeline {
+    agent any
+    stages {
+        stage('Deploy') {
+            steps {
+                script {
+                    retry(3) {
+                        try {
+                            sh 'echo hello'
+                        } catch (Exception e) {
+                            // Handle the failure if needed
+                            echo "Failed to execute the command: ${e.message}"
+                            currentBuild.result = 'FAILURE'
+                        }
+                    }
+                }
+
+                timeout(time: 5, unit: 'SECONDS') {
+                    try {
+                        sh 'sleep 5'
+                    } catch (Exception e) {
+                        // Handle the timeout if needed
+                        echo "Timeout occurred: ${e.message}"
+                        currentBuild.result = 'FAILURE'
+                    }
+                }
+            }
+        }
+    }
+}

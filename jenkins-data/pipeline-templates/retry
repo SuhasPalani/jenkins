@@ -1,12 +1,15 @@
-peline {
+pipeline {
     agent any
     stages {
         stage('Timeout') {
             steps {
-                retry(3) {
-                    sh 'I am not going to work :c'
+                script {
+                    retry(3) {
+                        sh 'echo "I am not going to work :c"'
+                    }
                 }
             }
         }
     }
 }
+
