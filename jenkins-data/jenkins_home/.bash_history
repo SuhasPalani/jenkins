@@ -221,3 +221,9 @@ ls -l
 cd jenkins_home
 clear
 exit
+docker ps
+clear
+exit
+lsb_release
+cat /etc/os-release
+exit
